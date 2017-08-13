@@ -1,0 +1,14 @@
+# config/app.yml for rails-settings-cached
+defaults: &defaults
+  twitter_consumer_key: ""
+  twitter_consumer_secret: ""
+  twitter_bearer_token: ""
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
