@@ -6,7 +6,7 @@
       <h4>GET tweets/<span class="blue-text text-accent-4">hashtag</span></h4>
       <p>Devuelve la cantidad de tweets recientes que contienen dicho <em>#hashtag</em></p>
       <h5> URL del Recurso </h5>
-      <p><%= url_for( action: :hashtag_count, controller: 'twitter_client', hashtag: '', only_path: false, protocol: :https) %><span class="blue-text text-accent-4">hashtag</span></p>
+      <p><%= url_for( action: :hashtag_count, controller: 'twitter_client', hashtag: '', only_path: false, protocol: :http) %><span class="blue-text text-accent-4">hashtag</span></p>
       </div>
     </div>
     <div class="row">
