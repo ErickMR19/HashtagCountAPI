@@ -26,6 +26,11 @@ gem "rails-settings-cached"
 # Use Twitter to connect to the Twitter API
 gem 'twitter'
 
+# Using materialize for styling
+gem 'materialize-sass'
+# jQuery is required by materialize
+gem 'jquery-rails'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

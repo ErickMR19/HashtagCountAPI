@@ -1,0 +1,21 @@
+<div class="container">
+     <div class="row">
+       <div class="col s12">
+         <h2> Configuración </h2>
+       </div>
+     </div>
+      <div class="row">
+        <div class="input-field col s12">          
+          <%= text_field_tag :twitter_consumer_key, @twitter_consumer_key_value, class: 'setting-field', autocomplete: :off, data: {action_url: setting_update_path(:twitter_consumer_key)} %>
+          <%= label_tag(:twitter_consumer_key, "Twitter Consumer Key", class: :active) %>          
+        </div>
+        </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= text_field_tag :twitter_consumer_secret, @twitter_consumer_secret_value, class: 'setting-field', autocomplete: :off, data: {action_url: setting_update_path(:twitter_consumer_secret)} %>
+          <%= label_tag(:twitter_consumer_secret, "Twitter Consumer Secret", class: :active) %>
+        </div>
+      </div>
+</div>
+
+<%= javascript_include_tag 'configuration_panel' %>

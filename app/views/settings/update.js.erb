@@ -1,0 +1,9 @@
+<% if @setting == 'twitter_consumer_key' || @setting == 'twitter_consumer_secret' %>
+  <% if @new_value && @new_value != '' %>
+    Materialize.toast('El valor fue guardado exitosamente', 4000, 'green darken-3');
+  <% else %>
+    Materialize.toast('El valor fue eliminado exitosamente. El API no funcionará si ambos valores no han sido ingresados', 4000, 'orange darken-3');
+  <% end %>
+<% else %>
+  // No se realizó ningún cambio
+<% end %>

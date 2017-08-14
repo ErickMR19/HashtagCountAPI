@@ -1,0 +1,55 @@
+<div class="section">
+  <div class="container">
+    <h1 class="header center blue-text">Documentacion API</h1>
+    <div class="row">
+      <div class="col s12">
+      <h4>GET tweets/<span class="blue-text text-accent-4">hashtag</span></h4>
+      <p>Devuelve la cantidad de tweets recientes que contienen dicho <em>#hashtag</em></p>
+      <h5> URL del Recurso </h5>
+      <p><%= url_for( action: :hashtag_count, controller: 'twitter_client', hashtag: '', only_path: false, protocol: :https) %><span class="blue-text text-accent-4">hashtag</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+       <h5>Parámetros</h5>
+        <table class="responsive-table highlight">
+          <thead>
+           <tr>
+             <th>Nombre</th>
+             <th>Descripción</th>
+             <th>Valores Permitidos</th>
+             <th>Valor por defecto</th>
+           </tr> 
+          </thead>
+          
+           <tbody>
+            <tr>
+              <td>result_type</td>
+              <td>Especifica el tipo de resultados a tomar en cuenta</td>
+              <td>
+                <em>mixed</em> : toma en cuenta tweets populates y actuales<br />
+                <em>recent</em> : toma en cuenta unicamente los tweets mas recientes<br />
+                <em>popular</em> : toma en cuenta unicamente tweets populares
+              </td>
+              <td>
+                recent
+              </td>
+            </tr>
+            <tr>
+              <td>lang</td>
+              <td>Si se específica, únicamente se tendrán en cuenta los tweets que se detecten en dicho idioma </td>
+              <td>El código <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank">ISO 639-1</a> correspondiente al idioma deseado</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>until</td>
+              <td>Toma en cuenta únicamente los tweets anteriores a la fecha indicado</td>
+              <td>Fecha en formato <em>AAAA-MM-DD</em></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
