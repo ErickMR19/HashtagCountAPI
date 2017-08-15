@@ -26,6 +26,9 @@ gem "rails-settings-cached"
 # Use Twitter to connect to the Twitter API
 gem 'twitter'
 
+# Use Rack for allow CORS requests
+gem 'rack-cors'
+
 # Using materialize for styling
 gem 'materialize-sass'
 # jQuery is required by materialize
